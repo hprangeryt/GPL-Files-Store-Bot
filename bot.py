@@ -88,7 +88,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support](https://t.me/gpl_kavinbot)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support](https://t.me/Dark_World7_4)",
                                      disable_web_page_preview=True)
             return
 
@@ -319,8 +319,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support", url="https://t.me/gpl_kavinbot"),
-                        InlineKeyboardButton("Join Channel", url="https://t.me/ithunammacinema")
+                        InlineKeyboardButton("Support", url="https://t.me/Dark_World7_4"),
+                        InlineKeyboardButton("Join Channel", url="https://t.me/Rangermovies")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -336,7 +336,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support](https://t.me/gpl_kavinbot).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support](https://t.me/Dark_World7_4).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -373,8 +373,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support", url="https://t.me/gpl_kavinbot"),
-                        InlineKeyboardButton("Join Channel", url="https://t.me/ithunammacinema")
+                        InlineKeyboardButton("Support", url="https://t.me/Dark_World7_4"),
+                        InlineKeyboardButton("Join Channel", url="https://t.me/Rangermovies")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
